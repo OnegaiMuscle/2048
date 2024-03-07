@@ -1,0 +1,28 @@
+.score {
+  width: var(--pixel-size) * 75;
+  background: var(--secondary-background);
+  border: var(--pixel-size) solid var(--secodary-background);
+  border-radius: calc(var(--pixel-size) * 0.75);
+  color: var(--tile-background);
+  font-weight: bold;
+  font-size: calc(var(--pixel-size) * 2);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.score > div {
+  font-size: calc(var(--pixel-size) * 3.5);
+  color: var(--primary-background);
+}
+
+@media (min-width: 512px) {
+  .score {
+    border: calc(var(--pixel-size) * 1) solid var(--secondary-background);
+    font-size: calc(var(--pixel-size) * 2);
+    line-height: calc(var(--pixel-size) * 3.5);
+  }
+
+  .score > div {
+    font-size: calc(var(--pixel-size) * 3.5);
+  }
+}
